@@ -124,7 +124,7 @@ jasypt:
 
 mybatis:
   # type-aliases扫描路径
-  type-aliases-package: cc.mrbird.system.domain,cc.mrbird.job.domain
+  type-aliases-package: cc.mrbird.system.domain,cc.mrbird.job.domain,cc.mrbird.app.domain
   # mapper xml实现扫描路径
   mapper-locations: classpath:mapper/*/*.xml
   property:
@@ -156,7 +156,7 @@ logging:
 
 
 # clouldwallet 配置
-febs:
+cloudwallet:
   shiro:
     # shiro redis缓存时长，  默认1800秒
     expireIn: 1800

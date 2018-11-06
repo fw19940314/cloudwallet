@@ -16,7 +16,7 @@ import java.time.LocalTime;
 
 @SpringBootApplication
 @EnableTransactionManagement
-@MapperScan("cc.mrbird.*.dao")
+@MapperScan({"cc.mrbird.*.dao","cc.mrbird.*.mapper"})
 @EnableConfigurationProperties({FebsProperties.class})
 @EnableCaching
 @EnableAsync

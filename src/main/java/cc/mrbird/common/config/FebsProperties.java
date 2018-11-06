@@ -6,7 +6,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ConfigurationProperties(prefix = "febs")
+@ConfigurationProperties(prefix = "cloudwallet")
 public class FebsProperties {
 
     private ShiroProperties shiro = new ShiroProperties();
