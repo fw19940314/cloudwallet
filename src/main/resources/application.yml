@@ -148,8 +148,8 @@ pagehelper:
 
 logging:
   level:
-    cc:
-      mrbird:
+    com:
+      shishu:
         system:
         web:
           dao: debug
