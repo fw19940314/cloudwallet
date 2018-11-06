@@ -2,6 +2,12 @@ server:
   port: 8080
   tomcat:
     uri-encoding: utf-8
+info:
+  app:
+    name: "cloudwallet"
+    description: "cloudwallet 云钱包接口"
+    version: "1.0.1"
+    spring-boot-version: "2.0.4.RELEASE"
 spring:
   datasource:
     druid:
@@ -83,9 +89,6 @@ spring:
     # 连接超时时间（毫秒）
     timeout: 0
 
-#  thymeleaf:
-#    cache: false
-
   aop:
     proxy-target-class: true
   cache:
@@ -93,21 +96,14 @@ spring:
       redis
 
 # spring boot admin配置开始
-  boot:
-    admin:
-      client:
-        url: http://localhost:8081
-        username: mrbird
-        password: 123456
-  application:
-    name: cloudwallet
-
-info:
-  app:
-    name: "cloudwallet"
-    description: "cloudwallet 云钱包接口"
-    version: "1.0.1"
-    spring-boot-version: "2.0.4.RELEASE"
+#  boot:
+#    admin:
+#      client:
+#        url: http://localhost:8081
+#        username: mrbird
+#        password: 123456
+#  application:
+#    name: cloudwallet
 
 management:
   endpoints:
@@ -122,6 +118,7 @@ jasypt:
   encryptor:
     password: febs
 
+#mybatis 配置
 mybatis:
   # type-aliases扫描路径
   type-aliases-package: com.shishu.system.domain,com.shishu.app.domain
@@ -139,13 +136,14 @@ mapper:
   identity: MYSQL
   order: after
 
-#pagehelper
+#pagehelper 分页插件配置
 pagehelper:
   helperDialect: mysql
   reasonable: true
   supportMethodsArguments: true
   params: count=countSql
 
+# log日志配置
 logging:
   level:
     com:
@@ -155,7 +153,7 @@ logging:
           dao: debug
 
 
-# clouldwallet 配置
+# clouldwallet shiro配置
 cloudwallet:
   shiro:
     # shiro redis缓存时长，  默认1800秒
