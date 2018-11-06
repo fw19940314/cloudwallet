@@ -10,6 +10,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -19,6 +20,7 @@ import java.time.LocalTime;
 @MapperScan({"cc.mrbird.*.dao","cc.mrbird.*.mapper"})
 @EnableConfigurationProperties({FebsProperties.class})
 @EnableCaching
+@EnableSwagger2
 @EnableAsync
 public class Application {
 
