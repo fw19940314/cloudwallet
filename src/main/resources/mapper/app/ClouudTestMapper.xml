@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cc.mrbird.app.mapper.CloudTestMapper">
-    <resultMap id="BaseResultMap" type="cc.mrbird.app.domain.ClouldTestDomain">
+<mapper namespace="com.shishu.app.mapper.CloudTestMapper">
+    <resultMap id="BaseResultMap" type="com.shishu.app.domain.ClouldTestDomain">
         <!--
           WARNING - @mbg.generated
         -->
