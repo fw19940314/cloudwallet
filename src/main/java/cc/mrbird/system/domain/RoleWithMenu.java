@@ -25,7 +25,5 @@ public class RoleWithMenu extends Role{
 	public void setMenuIds(List<Long> menuIds) {
 		this.menuIds = menuIds;
 	}
-	
-	
 
 }
