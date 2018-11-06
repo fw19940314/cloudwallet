@@ -15,6 +15,7 @@
 - 缓存 [Redis ](https://redis.io/)
 - 日志框架 [logback ](https://logback.qos.ch/)
 - 消息中间件 [RabbitMQ](http://www.rabbitmq.com/)
+- 其他：fastjson，poi，javacsv，quartz等。
 
 ### 第三方插件
 
@@ -24,39 +25,33 @@
 - API文档管理 [Swagger ](https://swagger.io/)
 
 
-Spring Security版本已发布：[https://github.com/wuyouzhuguli/FEBS-Security](https://github.com/wuyouzhuguli/FEBS-Security)
 
 ### 功能模块
 系统功能模块组成如下所示：
 ```
 项目结构
-|------------------------------------------|
-
+|java------------------------------------|
+|  |--cc          
+|    |--mrbird
+|      |-- app      app业务相关
+|      |-- common   工具类及配置
+|      |-- system   系统开发 
+|---application 启动类
+|resource--------------------------------|
+|   |--config 逆向工程配置文件
+|   |--docker docekr file配置文件
+|   |--ip2redion ip定位服务
+|   |--mapper mybatis xml文件
+|   |--static 静态文件
+|  |--application.yml 配置文件
+|  |--logback-spring.xml logback 配置文件
 ```
-### 技术选型
-#### 后端
-- 基础框架：Spring Boot 2.0.4.RELEASE
-
-- 持久层框架：Mybatis 3.4.5
-
-- 安全框架：Apache Shiro 1.4.0
-
-- 摸板引擎：Thymeleaf 3.0.9.RELEASE
-
-- 数据库连接池：阿里巴巴Druid 1.1.10
-
-- 缓存框架：Redis
-
-- 日志打印：logback
-
-- 其他：fastjson，poi，javacsv，quartz等。
-
  
 #### 开发环境
 
 - 语言：Java 8
 
-- IDE：Eclipse Oxygen & IDEA 2018.1.4(Ultimate Edition)
+- IDE：IDEA 2018
 
 - 依赖管理：Maven
 
