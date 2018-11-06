@@ -83,8 +83,8 @@ spring:
     # 连接超时时间（毫秒）
     timeout: 0
 
-  thymeleaf:
-    cache: false
+#  thymeleaf:
+#    cache: false
 
   aop:
     proxy-target-class: true
@@ -100,7 +100,7 @@ spring:
         username: mrbird
         password: 123456
   application:
-    name: febs
+    name: cloudwallet
 
 info:
   app:
@@ -124,7 +124,7 @@ jasypt:
 
 mybatis:
   # type-aliases扫描路径
-  type-aliases-package: cc.mrbird.system.domain,cc.mrbird.job.domain,cc.mrbird.app.domain
+  type-aliases-package: cc.mrbird.system.domain,cc.mrbird.app.domain
   # mapper xml实现扫描路径
   mapper-locations: classpath:mapper/*/*.xml
   property:
