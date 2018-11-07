@@ -20,7 +20,7 @@
 ### 第三方插件
 
 - 优化代码量 [Lombok](https://projectlombok.org/features/index.html)
-- Mybatis插件 [MybatisPlus](http://mp.baomidou.com/guide/generator.html)
+- Mybatis 通用Mapper插件 [Mybatis Mapper](https://github.com/abel533/Mapper/wiki)
 - 阿里云存储 [OOS](https://www.aliyun.com/product/oss?utm_content=se_1000110541)
 - API文档管理 [Swagger ](https://swagger.io/)
 
